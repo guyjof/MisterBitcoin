@@ -1,0 +1,16 @@
+.app-header {
+  @include flex-center;
+  nav {
+    @include flex-center;
+    width: 50%;
+    justify-content: space-between;
+    font-weight: 500;
+    padding: 10px 0;
+
+    .active-nav {
+      color: #3676fd;
+      font-weight: 500;
+    }
+  }
+  margin-bottom: 20px;
+}

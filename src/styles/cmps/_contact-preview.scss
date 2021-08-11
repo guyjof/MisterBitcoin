@@ -1,0 +1,35 @@
+.contact-preview {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  img {
+    height: unset;
+  }
+  a {
+    border: 1px solid black;
+    width: 50%;
+    border-radius: 1rem;
+  }
+}
+
+@include for-mobile-layout {
+  .contact-preview {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    img {
+      max-height: 80px;
+      max-width: 80px;
+    }
+    a {
+      width: fit-content;
+      padding: 5px 10px;
+    }
+  }
+}
